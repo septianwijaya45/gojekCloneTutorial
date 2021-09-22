@@ -52,6 +52,85 @@ const App = () => {
           </View>
         </View>
         {/* Gopay */}
+        <View
+          style={{
+            marginHorizontal: 17,
+            marginVertical: 15,
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              backgroundColor: '#2C5FB8',
+              padding: 16,
+              borderTopLeftRadius: 4,
+              borderTopRightRadius: 4,
+            }}>
+            <Image source={require('./icon/gopay.png')} />
+            <Text style={{fontSize: 17, fontWeight: 'bold', color: '#ffffff'}}>
+              Rp 60.000
+            </Text>
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              paddingTop: 20,
+              paddingBottom: 14,
+              backgroundColor: '#2F65BD',
+              borderBottomRightRadius: 4,
+              borderBottomLeftRadius: 4,
+            }}>
+            <View style={{flex: 1, alignItems: 'center'}}>
+              <Image source={require('./icon/pay.png')} />
+              <Text
+                style={{
+                  fontSize: 13,
+                  fontWeight: 'bold',
+                  color: 'white',
+                  marginTop: 15,
+                }}>
+                Pay
+              </Text>
+            </View>
+            <View style={{flex: 1, alignItems: 'center'}}>
+              <Image source={require('./icon/nearby.png')} />
+              <Text
+                style={{
+                  fontSize: 13,
+                  fontWeight: 'bold',
+                  color: 'white',
+                  marginTop: 15,
+                }}>
+                Nearby
+              </Text>
+            </View>
+            <View style={{flex: 1, alignItems: 'center'}}>
+              <Image source={require('./icon/topup.png')} />
+              <Text
+                style={{
+                  fontSize: 13,
+                  fontWeight: 'bold',
+                  color: 'white',
+                  marginTop: 15,
+                }}>
+                TopUp
+              </Text>
+            </View>
+            <View style={{flex: 1, alignItems: 'center'}}>
+              <Image source={require('./icon/more.png')} />
+              <Text
+                style={{
+                  fontSize: 13,
+                  fontWeight: 'bold',
+                  color: 'white',
+                  marginTop: 15,
+                }}>
+                More
+              </Text>
+            </View>
+          </View>
+        </View>
+        {/* Main Feature */}
       </View>
       <View style={{height: 54, flexDirection: 'row'}}>
         <View
