@@ -597,12 +597,207 @@ const App = () => {
               </View>
             </View>
           </View>
+          {/* Line Buttom */}
           <View
             style={{
               borderBottomColor: '#61A756',
               borderBottomWidth: 1,
               paddingHorizontal: 12,
               marginTop: 12,
+            }}></View>
+        </View>
+        {/* Horizontal Scroll (Go food Nearby Section) */}
+        <View>
+          <View
+            style={{
+              height: 15,
+              width: 60,
+            }}>
+            <Image
+              source={require('./logo/gojek.png')}
+              style={{
+                width: undefined,
+                height: '100%',
+                resizeMode: 'contain',
+                flex: 1,
+                marginLeft: 16,
+              }}
+            />
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              marginBottom: 16,
+              paddingHorizontal: 16,
+            }}>
+            <Text style={{fontSize: 17, fontWeight: 'bold', color: '#1C1C1C'}}>
+              Nearby Restaurants
+            </Text>
+            <Text style={{fontSize: 17, fontWeight: 'bold', color: '#61A756'}}>
+              See All
+            </Text>
+          </View>
+          <ScrollView horizontal style={{paddingLeft: 16}}>
+            <View style={{marginRight: 16}}>
+              <View
+                style={{
+                  width: 150,
+                  height: 150,
+                  borderRadius: 10,
+                }}>
+                <Image
+                  source={require('./dummy/go-food-kfc.jpg')}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    resizeMode: 'contain',
+                    flex: 1,
+                    resizeMode: 'cover',
+                    borderRadius: 4,
+                  }}
+                />
+              </View>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  color: '#1C1C1C',
+                  marginTop: 12,
+                  width: '70%',
+                }}>
+                Sederhana Minang
+              </Text>
+            </View>
+            <View style={{marginRight: 16}}>
+              <View
+                style={{
+                  width: 150,
+                  height: 150,
+                  borderRadius: 10,
+                }}>
+                <Image
+                  source={require('./dummy/go-food-banka.jpg')}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    resizeMode: 'contain',
+                    flex: 1,
+                    resizeMode: 'cover',
+                    borderRadius: 4,
+                  }}
+                />
+              </View>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  color: '#1C1C1C',
+                  marginTop: 12,
+                  width: '70%',
+                }}>
+                Terang Bulan
+              </Text>
+            </View>
+            <View style={{marginRight: 16}}>
+              <View
+                style={{
+                  width: 150,
+                  height: 150,
+                  borderRadius: 10,
+                }}>
+                <Image
+                  source={require('./dummy/go-food-gm.jpg')}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    resizeMode: 'contain',
+                    flex: 1,
+                    resizeMode: 'cover',
+                    borderRadius: 4,
+                  }}
+                />
+              </View>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  color: '#1C1C1C',
+                  marginTop: 12,
+                  width: '70%',
+                }}>
+                Mie Ayam
+              </Text>
+            </View>
+            <View style={{marginRight: 16}}>
+              <View
+                style={{
+                  width: 150,
+                  height: 150,
+                  borderRadius: 10,
+                }}>
+                <Image
+                  source={require('./dummy/go-food-orins.jpg')}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    resizeMode: 'contain',
+                    flex: 1,
+                    resizeMode: 'cover',
+                    borderRadius: 4,
+                  }}
+                />
+              </View>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  color: '#1C1C1C',
+                  marginTop: 12,
+                  width: '70%',
+                }}>
+                Martabak Merah
+              </Text>
+            </View>
+            <View style={{marginRight: 16}}>
+              <View
+                style={{
+                  width: 150,
+                  height: 150,
+                  borderRadius: 10,
+                }}>
+                <Image
+                  source={require('./dummy/go-food-pak-boss.jpg')}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    resizeMode: 'contain',
+                    flex: 1,
+                    resizeMode: 'cover',
+                    borderRadius: 4,
+                  }}
+                />
+              </View>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  color: '#1C1C1C',
+                  marginTop: 12,
+                  width: '70%',
+                }}>
+                Ayam Geprek Pak Boss
+              </Text>
+            </View>
+          </ScrollView>
+          {/* Line Buttom */}
+          <View
+            style={{
+              borderBottomColor: '#61A756',
+              borderBottomWidth: 1,
+              paddingHorizontal: 12,
+              marginTop: 12,
+              marginHorizontal: 16,
               marginBottom: 20,
             }}></View>
         </View>
