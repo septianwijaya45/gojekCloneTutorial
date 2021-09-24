@@ -60,7 +60,8 @@ const GoNewsFeature = props => {
             paddingHorizontal: 12,
             alignSelf: 'flex-end',
             borderRadius: 4,
-          }}>
+          }}
+          onPress={props.tekan}>
           <Text
             style={{
               fontSize: 13,
