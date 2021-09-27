@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Home, NewsDetail} from '../../containers/pages';
+import {Home, NewsDetail, OrderDetail, Orders} from '../../containers/pages';
+import {createSwitchNavigator} from 'react-navigation';
 
 const Stack = createNativeStackNavigator();
 /*
@@ -10,13 +11,34 @@ const Stack = createNativeStackNavigator();
     2. Page yang tidak memiliki back menggunakan SwitchNavigator()
 */
 
+// const Router = createSwitchNavigator(
+//   {
+//     Home: {
+//       screen: Home,
+//     },
+//   },
+//   {
+//     headerMode: 'none',
+//     initialRouteName: 'Home',
+//   },
+// );
+
 const Router = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{headerShown: false, initialRouteName: 'Home'}}>
-        <Stack.Screen name="Home" component={Home} />
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{headerShown: false, initialRouteName: 'Home'}}
+        />
         <Stack.Screen name="NewsDetail" component={NewsDetail} />
+        <Stack.Screen
+          name="Orders"
+          component={Orders}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen name="OrderDetail" component={OrderDetail} />
       </Stack.Navigator>
     </NavigationContainer>
   );

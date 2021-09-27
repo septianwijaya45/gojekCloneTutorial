@@ -1,15 +1,16 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
 
 const NavbarIcon = props => {
   return (
-    <View
+    <TouchableOpacity
       style={{
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: 'white',
-      }}>
+      }}
+      onPress={props.tekan}>
       <Image
         source={props.img}
         style={{width: 26, height: 26, color: '#43AB4A'}}
@@ -22,7 +23,7 @@ const NavbarIcon = props => {
         }}>
         {props.title}
       </Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 

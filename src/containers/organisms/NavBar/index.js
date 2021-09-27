@@ -1,18 +1,25 @@
+import {useNavigation} from '@react-navigation/core';
 import React from 'react';
 import {View, Text} from 'react-native';
 import NavbarIcon from '../../../components/molecules/NavbarIcon';
 
 const Navbar = () => {
+  const navigation = useNavigation();
   return (
     <View style={{height: 54, flexDirection: 'row'}}>
       <NavbarIcon
         title="Home"
         img={require('../../../assets/icon/home-active.png')}
-        active
+        tekan={() => {
+          navigation.navigate('Home');
+        }}
       />
       <NavbarIcon
         title="Orders"
         img={require('../../../assets/icon/order.png')}
+        tekan={() => {
+          navigation.navigate('Orders');
+        }}
       />
       <NavbarIcon title="Help" img={require('../../../assets/icon/help.png')} />
       <NavbarIcon
